@@ -1,4 +1,3 @@
-
 <?php
 
 $hotels = [
@@ -45,10 +44,13 @@ $hotels = [
 // for ( $i = 0; $i < count($hotels); $i++){
 //     foreach ($hotels[$i])
 // }
+?>
 
-foreach ($hotels as $hotel) {
+<?php foreach ($hotels as $hotel) {
     foreach ($hotel as $hotelInfo) {
-        echo $hotelInfo;
+?>
+        <p> <?php echo $hotelInfo; ?></p>
+<?php
     }
 }
 ?>
