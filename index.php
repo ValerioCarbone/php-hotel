@@ -81,29 +81,3 @@ $hotels = [
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </html>
-
-<!-- <?php foreach ($hotels as $hotel) { ?>
-                    <tr><?php
-                        if ($hotelInfo == 'parking' && $value === true) { ?>
-                            <td class="text-center">
-                                <?php echo 'La struttura è dotata di parcheggio'; ?>
-                            </td>
-                        <?php } else if ($hotelInfo == 'parking' && $value === false) {
-                        ?> <td class="text-center">
-                                <?php echo 'La struttura non è dotata di parcheggio'; ?>
-                            </td>
-                        <?php } else if ($hotelInfo == 'distance_to_center') { ?>
-                            <td class="text-center">
-                                <?php echo $value . ' Km'; ?>
-                            </td>
-                        <?php } else {
-                        ?> <td class="text-center">
-                                <?php echo $value; ?>
-                            </td>
-                        <?php
-                        }
-                        ?>
-                    </tr>
-                <?php
-            }
-                ?> -->
