@@ -47,10 +47,21 @@ $hotels = [
 ?>
 
 <?php foreach ($hotels as $hotel) {
-    foreach ($hotel as $hotelInfo) {
+    foreach ($hotel as $hotelInfo => $value) {
+        if ($hotelInfo == 'parking' && $value === true) {
 ?>
-        <p> <?php echo $hotelInfo; ?></p>
-<?php
+            <p>
+                <?php echo 'La struttura è dotata di parcheggio'; ?>
+            </p>
+        <?php        } else if ($hotelInfo == 'parking' && $value === false) {
+        ?> <p>
+                <?php echo 'La struttura non è dotata di parcheggio'; ?>
+            </p>
+        <?php        } else {
+        ?> <p>
+                <?php echo $value; ?>
+            </p>
+<?php       }
     }
 }
 ?>
